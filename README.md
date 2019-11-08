@@ -7,6 +7,18 @@ This is mostly a port of [malesch/semantic-reagent](https://github.com/malesch/s
 [![Clojars Project](https://img.shields.io/clojars/v/toyokumo/semantic-ui-reagent.svg)](https://clojars.org/toyokumo/semantic-ui-reagent)
 [![cljdoc badge](https://cljdoc.org/badge/toyokumo/semantic-ui-reagent)](https://cljdoc.org/d/toyokumo/semantic-ui-reagent/CURRENT)
 
+## Installation
+
+Install `semantic-ui-react`.
+
+```bash
+yarn add semantic-ui-react
+# or
+npm install semantic-ui-react
+```
+
+And add this library to your dependency on `shadow-cljs.edn`.
+
 ## Usage
 
 ```clojure
