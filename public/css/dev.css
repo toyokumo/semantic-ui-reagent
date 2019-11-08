@@ -1,0 +1,13 @@
+div.examples div.ex {
+    padding: 1em 0;
+}
+div.examples div.ex:not(:last-child) {
+    border-bottom: 1px dashed lightgray;
+}
+
+div.ex > span.title {
+    display: block;
+    font-size: 80%;
+    font-style: italic;
+    margin-bottom: 1ex;
+}
