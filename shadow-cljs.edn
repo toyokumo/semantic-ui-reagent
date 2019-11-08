@@ -1,0 +1,11 @@
+{:source-paths ["src" "dev"]
+ :dependencies [[reagent "0.9.0-rc2"]]
+
+ :builds {:dev {:target :browser
+                :output-dir "public/js"
+                :asset-path "/js"
+
+                :modules {:main {:init-fn semantic-ui-reagent.dev/init}}
+
+                :devtools {:http-root "public"
+                           :http-port 8888}}}}

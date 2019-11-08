@@ -1,0 +1,11 @@
+{
+  "name": "semantic-ui-reagent",
+  "devDependencies": {
+    "shadow-cljs": "^2.8.69"
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "semantic-ui-react": "^0.88.1"
+  }
+}
