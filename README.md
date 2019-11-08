@@ -1,10 +1,55 @@
 # semantic-ui-reagent
 
-A Clojure library designed to ... well, that part is up to you.
+A ClojureScript library for using [Semantic UI React](http://react.semantic-ui.com) with [Reagent](http://reagent-project.github.io/) .
+
+This is mostly a port of [malesch/semantic-reagent](https://github.com/malesch/semantic-reagent) but can work on [shadow-cljs](https://github.com/thheller/shadow-cljs).
+
+[![Clojars Project](https://img.shields.io/clojars/v/toyokumo/semantic-ui-reagent.svg)](https://clojars.org/toyokumo/semantic-ui-reagent)
+[![cljdoc badge](https://cljdoc.org/badge/toyokumo/semantic-ui-reagent)](https://cljdoc.org/d/toyokumo/semantic-ui-reagent/CURRENT)
 
 ## Usage
 
-FIXME
+```clojure
+;; Work on shadow-cljs
+
+(:require '[reagent.core :as r]
+          '["semantic-ui-react" :as sur]
+          '[semantic-ui-reagent.core :as sui])
+
+(defn- sidebar []
+  (let [visible (r/atom false)
+        on-click (fn [_] (reset! visible (not @visible)))]
+    (fn []
+      [:div
+       [sui/Button {:on-click on-click} "Toggle"]
+       [sui/SidebarPushable {:as sur/Segment}
+        [sui/Sidebar {:as sur/Menu
+                      :animation "push"
+                      :icon "labeled"
+                      :inverted true
+                      :visible @visible
+                      :vertical true
+                      :width "thin"}
+         [sui/MenuItem {:as "a"}
+          [sui/Icon {:name "home"}]
+          "HOME"]
+         [sui/MenuItem {:as "a"}
+          [sui/Icon {:name "gamepad"}]
+          "Games"]]
+        [sui/SidebarPusher
+         [sui/Segment {:basic true}
+          [sui/Header {:as "h3"} "Content"]
+          [sui/Image {:src "https://react.semantic-ui.com/images/wireframe/paragraph.png"}]]]]])))
+
+(defn- main-component []
+  [sui/Container
+   [sidebar]]])
+
+(defn main []
+  (r/render [main-component] (.getElementById js/document "app")))
+```
+
+There area more usage in [dev/semantic_ui_reagent/dev.cljs](dev/semantic_ui_reagent/dev.cljs).
 
 ## License
 
