@@ -8,13 +8,11 @@
 ;;
 
 (def Confirm (r/adapt-react-class sur/Confirm))
-(def MountNode (r/adapt-react-class sur/MountNode))
 (def Pagination (r/adapt-react-class sur/Pagination))
 (def PaginationItem (r/adapt-react-class sur/PaginationItem))
 (def Portal (r/adapt-react-class sur/Portal))
 (def PortalInner (r/adapt-react-class sur/PortalInner))
 (def Radio (r/adapt-react-class sur/Radio))
-(def Responsive (r/adapt-react-class sur/Responsive))
 (def Select (r/adapt-react-class sur/Select))
 (def TextArea (r/adapt-react-class sur/TextArea))
 (def TransitionablePortal (r/adapt-react-class sur/TransitionablePortal))
