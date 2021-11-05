@@ -65,7 +65,7 @@ There area more usage in [dev/semantic_ui_reagent/dev.cljs](dev/semantic_ui_reag
 
 ## License
 
-Copyright 2019 TOYOKUMO,Inc.
+Copyright 2019-2021 Toyokumo,Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
