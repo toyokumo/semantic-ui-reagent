@@ -1,5 +1,5 @@
 (ns semantic-ui-reagent.dev
-  (:require [reagent.core :as r]
+  (:require [reagent.dom :as rd]
             [semantic-ui-reagent.elements :as e]
             [semantic-ui-reagent.collections :as co]
             [semantic-ui-reagent.views :as v]
@@ -71,8 +71,8 @@
 
 (defn ^:dev/after-load start []
   (js/console.log "start")
-  (r/render [main-component]
-            (.getElementById js/document "app")))
+  (rd/render [main-component]
+             (.getElementById js/document "app")))
 
 (defn ^:export init []
   (js/console.log "init")
