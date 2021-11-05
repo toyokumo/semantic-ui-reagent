@@ -2,6 +2,8 @@
 
 ## Unreleased (dev)
 
+## 0.2.0
+
 ### Changed
 * Bumped react to 17.0.2.
 * Bumped react-dom to 17.0.2.
