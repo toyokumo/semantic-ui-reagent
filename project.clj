@@ -6,4 +6,4 @@
   :deploy-repositories [["releases" {:url "https://repo.clojars.org" :creds :gpg}]
                         ["snapshots" :clojars]]
   :source-paths ["src"]
-  :dependencies [[reagent "0.9.0-rc2"]])
+  :dependencies [[reagent "1.1.0"]])
