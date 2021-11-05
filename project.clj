@@ -1,4 +1,4 @@
-(defproject toyokumo/semantic-ui-reagent "0.2.0-SNAPSHOT"
+(defproject toyokumo/semantic-ui-reagent "0.2.0"
   :description "A ClojureScript library for using Semantic UI React with Reagent on shadow-cljs."
   :url "https://github.com/toyokumo/semantic-ui-reagent"
   :license {:name "Apache, Version 2.0"
